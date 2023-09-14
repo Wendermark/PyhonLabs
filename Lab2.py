@@ -18,7 +18,7 @@ def isPrime(x):
 
     return True
 
-def typeDependencyCalc(x):
+def typeDependentCalc(x):
 
     t = type(x)
 
