@@ -83,6 +83,31 @@ typeDependencyCalc("1239")
 
 input()
 
+m = [
+    [1, 1, 1],
+    [1, 1, 1],
+    [1, 1, 1]
+]
+print(isSymmetric(m))
+
+m = [
+    [1, 1, 3],
+    [1, 1, 2],
+    [3, 2, 1]
+]
+
+print(isSymmetric(m))
+
+m = [
+    [1, 1, 1, 4],
+    [1, 1, 1],
+    [1, 1, 1]
+]
+
+print(isSymmetric(m))
+
+input()
+
 tryExceptShowcase(1)
 print()
 tryExceptShowcase(0)
