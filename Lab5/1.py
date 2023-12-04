@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def first_task():
     x = 1.5
 
-    first_part = np.power(np.sin(np.pi / 2 + 1))
+    first_part = np.power(np.sin(np.pi / 2 + 1), 2)
     second_part = x * np.power(3 + np.power(x, 2), 1./4.)
     third_part = np.power(np.tan(np.power(x, 3) - 1), 3)
     fourth_part = np.arctan(x / 2) - np.log(17.56)
@@ -137,18 +137,17 @@ def third_task():
 
 
 def menu():
-    print("\n\tHello, Dear User!")
+    print("\n\tВыберите номер задания:")
 
     while True:
 
-        print("\n\tMenu:"
-              "\n\t1. First Task"
-              "\n\t2. Second Task"
-              "\n\t3. Third Task"
-              "\n\t4. Fourth Task"
-              "\n\tAnother. Exit")
+        print("\n\Меню:"
+              "\n\t1. Первое задание"
+              "\n\t2. Второе задание"
+              "\n\t3. Третее задание"
+              "\n\t0. Выход")
 
-        choice = input("\n\tInput Number of Task from Menu to Test: ")
+        choice = input()
 
         if choice == "1":
             first_task()
@@ -159,6 +158,9 @@ def menu():
         elif choice == "3":
             third_task()
 
-        else:
-            print("\n\tGoodbye, Dear User!")
+        elif choice == "0":
+            print("\n\Конец программы")
             break
+
+if __name__ == "__main__":
+    menu()
